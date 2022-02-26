@@ -1,0 +1,137 @@
+/*
+général
+*/
+body {
+    background: white;
+    color: black;
+}
+
+header, footer {
+    background: rgb(200, 227, 255);
+    color: rgb(25, 25, 25);
+    width: 1500px;
+    height: 75px;
+    border-radius: 25px 25px 25px 25px;
+        border: 5px rgb(200, 227, 255) solid;
+}
+
+.btn_header, .btn_footer {
+    background: white;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+    .btn_header:hover {
+        background: whitesmoke;
+        color: rgb(25, 25, 25);
+    }
+    .btn_footer:hover {
+        background: whitesmoke;
+        color: rgb(25, 25, 25);
+    }
+
+#change_room {
+    background: whitesmoke;
+    color: rgb(25, 25, 25);
+    width: 200px;
+    height: 75px;
+    border-radius: 25px 25px 25px 25px;
+}
+    #change_room input {
+        background: white;
+        color: black;
+        width: 200px;
+        height: 37,5px;
+        border-radius: 25px 25px 25px 25px;
+    }
+
+#change_y_name {
+    background: whitesmoke;
+    color: rgb(25, 25, 25);
+    width: 200px;
+    height: 75px;
+    border-radius: 25px 25px 25px 25px;
+}
+    #change_y_name input {
+        background: white;
+        color: black;
+        width: 200px;
+        height: 37,5px;
+        border-radius: 25px 25px 25px 25px;
+    }
+
+#gen_div_gen {
+    background: whitesmoke;
+    color: rgb(25, 25, 25);
+    width: 1859px;
+    height: 894px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#div_client {
+    background: transparent;
+    color: black;
+    width: auto;
+    height: auto;
+    border-radius: 25px 25px 25px 25px;
+    float: right;
+}
+    #gen_div_chat {
+        background: rgb(200, 227, 255);
+        color: black;
+        width: 500px;
+        height: 500px;
+        border-radius: 25px 25px 25px 25px;
+    }
+    #gen_div_y_cam {
+        background: rgb(200, 227, 255);
+        color: black;
+        width: 500px;
+        height: 300px;
+        border-radius: 25px 25px 25px 25px;
+    }
+
+#gen_div_live {
+    background: rgb(200, 227, 255);
+    color: black;
+    width: 1340px;
+    height: 800px;
+    border-radius: 25px 25px 25px 25px;
+}
+    #gen_div_live iframe {
+        background: black;
+        color: aqua;
+        width: 800px;
+        height: 200px;
+    }
+
+/*
+Les cameras (des autre utilisateurs).
+*/
+#camera {
+    background: white;
+    color: black;
+    width: auto;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.retour {
+    width: 320px;
+    height: 240px;
+}
+
+.stream {
+    background: white;
+    color: black;
+    width: auto;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.canvas {
+    width: 320px;
+    height: 240px;
+    display: none;
+}

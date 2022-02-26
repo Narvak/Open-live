@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>live | stream</title>
+<!-- Primary Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="title" content="">
+	<meta name="description" content="live | stream.html">
+	<meta name="author" content="Narvak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://.com/">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="live | stream.html">
+	<meta property="og:image" content="https://.png">
+
+<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="hhttps://.com/">
+	<meta property="twitter:title" content="">
+	<meta property="twitter:description" content="live | stream.html">
+	<meta property="twitter:image" content="https://.png">
+
+<!-- Link -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="responsive" href="css/media-queries.css">
+	<link rel="icon" type="image/x-icon" href="media/image/icone.png"/>
+
+	<!--link_chat-->
+		<link rel="chat" href="scss/chat.scss">
+
+
+</head>
+<!-- Script -->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="javascript/lib-jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="javascript/all-lib_js.js"></script>
+	<!-- script_cam_|_texte_chat-->
+		<script language="javascript" type="text/javascript" src="javascript/cam.js"></script>
+		<script language="javascript" type="text/javascript" src="javascript/texte.js"></script>
+
+
+    <body>
+		<!-- Website -->
+        <header>
+            <nav>
+                <button onclick="change_room(this)" class="btn_header">
+                    <p>change room</p>
+                </button>
+
+                <button onclick="change_y_name(this)" class="btn_header">
+                    <p>change your name</p>
+                </button>
+
+                <button onclick="change_p_profile(this)" class="btn_header">
+                    <p>change your picture of profile</p>
+                </button>
+            </nav>
+        </header>
+
+        <div id="gen_div_gen">
+			<div id="div_client">
+            	<div id="gen_div_chat">
+                	<h1><strong>Chat</strong></h1>
+
+					<div class='container' ng-cloak ng-app="chatApp">
+						<h2></h2>
+							<div class='chatbox' ng-controller="MessageCtrl as chatMessage">
+								<div class='chatbox__user-list'>
+									<h3><strong>User list :</strong></h3>
+										<div class='chatbox__user--active'>
+							 				<p>User 1</p>
+										</div>
+
+										<div class='chatbox__user--busy'>
+							  				<p>User 2</p>
+										</div>
+
+										<div class='chatbox__user--active'>
+							  				<p>User 3</p>
+										</div>
+
+										<div class='chatbox__user--active'>
+							  				<p>User 4</p>
+										</div>
+
+										<div class='chatbox__user--away'>
+							  				<p>User 5</p>
+										</div>
+						  		</div>
+
+						  		<div class="chatbox__messages" ng-repeat="message in messages">
+									<div class="chatbox__messages__user-message">
+							  			<div class="chatbox__messages__user-message--ind-message">
+											<p class="name">{{message.Name}}</p>
+												<br/>
+											<p class="message">{{message.Message}}</p>
+							  			</div>
+									</div>
+						  		</div>
+
+						  		<form>
+									<input type="text" placeholder="Enter your message">
+						  		</form>
+
+							</div>
+					</div>
+
+            	</div>
+
+				<div id="gen_div_y_cam">
+                	<h1><strong>Your cam</strong></h1>
+						<p>
+							<strong>Pas d'icônes disponibles pour le moment.</strong>
+						</p>
+            	</div>
+			</div>
+
+            <div id="gen_div_live">
+				<div id="camera"></div>
+					<a href="javascript:stream_on();webcam.capture();void(0);">Démarrer le streaming</a>
+						
+						<div class="retour">
+							<img class="stream" src="" />
+						</div>
+
+							<canvas class="canvas"></canvas>
+			</div>
+
+        </div>
+
+		<footer>
+			<button onclick="see_more(this)" class="btn_footer">
+				<p>See more</p>
+			</button>
+
+			<button onclick="help(this)" class="btn_footer">
+				<p> Help</p>
+			</button>
+		</footer>
+
+    </body>
+</html>
